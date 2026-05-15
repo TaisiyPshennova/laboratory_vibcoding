@@ -10,11 +10,27 @@
 - Vanilla JS + HTML + CSS
 - ESLint 9 (flat config)
 - GitHub Actions (CI + CD)
+- 
+## 📋 Vibe coding log
+- **LLM-ассистент**: DeepSeek (чат-модель)
+- **2–3 ключевых промпта**:
+  1. «Создай HTML-страницу резюме в стиле ретро-терминала с зелёным текстом и интерактивной консолью. Используй ванильный JS и CSS. Поддержи команды help, about, skills, projects, contact, clear.»
+  2. «Добавь эффект печатающегося приветствия на чистом JavaScript без сторонних библиотек.»
+  
+- **Что правил(а) руками после генерации**:
+- - Скоректировала персональные данные
+  - Исправил регистр в названиях команд.
+  - Настроила автоматический год в футере.
+  - Поправила пути к файлам и тип модуля для корректной работы Vite на GitHub Pages.
+  - Уточнила описания проектов и навыков.
+
+## 🌐 Live URL
+[https://taisiypshennova.github.io/laboratory_vibcoding/](https://taisiypshennova.github.io/laboratory_vibcoding/)
 
 ## Локальный запуск
 ```bash
 npm install
-npm run dev       # http://localhost:5173
+npm run dev       # высылает ссылку на сайт localhost
 npm run lint      # проверка кода
 npm run build     # сборка в dist/
 npm run preview   # прод-сборка локально
