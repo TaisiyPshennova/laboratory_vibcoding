@@ -1,63 +1,39 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV — Your Name</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <main class="cv">
-      <header class="cv__header">
-        <h1>Your Name</h1>
-        <p class="cv__tagline">
-          One-line summary. Who you are, what you do, what you want next.
-        </p>
-        <ul class="cv__contacts">
-          <li><a href="mailto:you@example.com">you@example.com</a></li>
-          <li><a href="https://github.com/yourname">github.com/yourname</a></li>
-        </ul>
-
-        <!-- TODO: твой нестандартный элемент.
-             Пример: переключатель темы, anim, easter egg. -->
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-          🌗
-        </button>
-      </header>
-
-      <section>
-        <h2>About</h2>
-        <p>
-          Two or three sentences. What you care about, what you've shipped,
-          where you're heading.
-        </p>
-      </section>
-
-      <section>
-        <h2>Experience / Projects</h2>
-        <article>
-          <h3>Project / Role Title</h3>
-          <p class="cv__meta">Company / Context · 2024 — now</p>
-          <p>What you did. Why it mattered. What shipped.</p>
-        </article>
-        <article>
-          <h3>Another One</h3>
-          <p class="cv__meta">Context · 2023</p>
-          <p>Same shape. Keep it tight.</p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
-        <ul class="cv__skills">
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>CI/CD</li>
-          <li>Other thing you actually know</li>
-        </ul>
-      </section>
-    </main>
-
-    <script type="module" src="./src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV студента, изучающего C++">
+    <meta property="og:title" content="CV - Пшеннова Таисия">
+    <meta property="og:description" content="Резюме начинающего C++ разработчика">
+    <title>CV | Твоё Имя</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="btn close"></span>
+            <span class="btn minimize"></span>
+            <span class="btn maximize"></span>
+            <span class="title">terminal — тася@cv: ~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+            <div class="output" id="output">
+                <p class="line"><span class="prompt">$</span> <span class="cmd">cat welcome.txt</span></p>
+                <p class="line typewriter" id="welcomeText"></p>
+                <p class="line hint">Введи <span class="cmd">help</span> для списка команд</p>
+            </div>
+            <div class="input-line">
+                <span class="prompt">$</span>
+                <input type="text" id="cmdInput" autofocus autocomplete="off" aria-label="Командная строка">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© <span id="year"></span> Тася. Сделано с ❤️ и C++</p>
+    </footer>
+    <button id="scrollTopBtn" title="Наверх" aria-label="Прокрутить вверх">↑</button>
+    <script src="src/main.js"></script>
+</body>
 </html>
