@@ -5,11 +5,12 @@ const scrollTopBtn = document.getElementById('scrollTopBtn');
 const welcomeTextEl = document.getElementById('welcomeText');
 const yearSpan = document.getElementById('year');
 
+
 // Автоматический год
 yearSpan.textContent = new Date().getFullYear();
 
 // Эффект печати приветствия
-const welcomeMsg = 'Привет! Я Тася — начинающий C++ разработчик.';
+const welcomeMsg = 'Привет! Я Тася Пшеннова — студентка СПбПУ, направление МОАИС.';
 let charIndex = 0;
 function typeWriter() {
     if (charIndex < welcomeMsg.length) {
@@ -31,23 +32,26 @@ const data = {
   projects  - проекты
   contact   - контакты
   clear     - очистить экран`,
-    about: `Имя: Тася
-Образование: СПБПУ, направление "МАТОБЕС"
-Курс: изучаю C++, алгоритмы, структуры данных.
-Увлечён системным программированием и разработкой высокопроизводительных приложений.`,
-    skills: `C++ (STL, CMake, многопоточность)
-C (базовые знания)
+    about: `Имя: Пшеннова Таисия (Тася)
+Университет: СПбПУ Петра Великого
+Направление: Математическое обеспечение и администрирование информационных систем
+Курс: изучаю C++, алгоритмы, базы данных, веб-технологии.
+Интересуюсь системным программированием и автоматизацией.`,
+    skills: `C++ (STL, базовые алгоритмы)
+C (основы)
 Python (скрипты, автоматизация)
-Git, GitHub Actions, CI/CD
-Linux (bash, командная строка)`,
-    projects: `1. Консольная игра "Змейка" (C++, ncurses) — [ссылка на репозиторий]
-2. Парсер логов (C++, регулярные выражения) — [ссылка]
-3. Калькулятор с обратной польской записью (C++, стек) — [ссылка]
-4. Лабораторная CV (этот проект) — CI/CD, GitHub Pages`,
-    contact: `Email:ognevadragoziy@yandex.ru
+SQL (базовые запросы)
+Git, GitHub, CI/CD
+Linux (bash, командная строка)
+Английский язык (Intermediate)`,
+    projects: `1. Лабораторная работа "CV в стиле терминала" (этот проект) — CI/CD, GitHub Pages
+2. Консольная утилита обработки текста (C++)
+3. Моделирование банковской очереди (C++, ООП)
+4. Мини-сайт портфолио (HTML/CSS/JS)`,
+    contact: `Email: ognevadragoziy@yandex.ru
 Telegram: @PenBalfour
-GitHub: github.com/TaisiyPshennova
-Свяжись со мной — буду рад сотрудничеству и обмену опытом!`
+GitHub: github.com/TaissiyPshennova
+Рада новым знакомствам и предложениям о сотрудничестве!`
 };
 
 // Обработка команд
