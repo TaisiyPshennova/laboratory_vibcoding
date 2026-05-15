@@ -5,6 +5,7 @@ const scrollTopBtn = document.getElementById('scrollTopBtn');
 const welcomeTextEl = document.getElementById('welcomeText');
 const yearSpan = document.getElementById('year');
 
+
 // Автоматический год
 yearSpan.textContent = new Date().getFullYear();
 
